@@ -67,7 +67,7 @@ $ multipass list
 $ multipass stop k3s
 $ multipass start k3s
 $ multipass delete k3s
-$ multipass purge k3s
+$ multipass purge
 ```
 
 
