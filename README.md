@@ -3,8 +3,8 @@
 ## Install multipass and k3s inside that VM
 ```bash
 $ brew cask install multipass
-$ multipass launch --name k3s --cpus 4 --mem 4g --disk 20g
-$ multipass exec k3s -- bash -c "curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -"
+$ multipass launch --name k3s --cpus 2 --mem 3g --disk 20g
+$ multipass exec k3s -- bash -c "curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=v0.8.0 K3S_KUBECONFIG_MODE="644" sh -"
 ```
 
 ## Access K8s cluster from local
